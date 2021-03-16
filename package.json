@@ -1,0 +1,15 @@
+{
+  "name": "@lucy/prism",
+  "version": "1.0.0",
+  "description": "Prism plugin for the Lucy language",
+  "main": "lib/main.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Lucy", "Prism"],
+  "author": "Matthew Phillips",
+  "license": "BSD-2-Clause"
+}
