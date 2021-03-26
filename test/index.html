@@ -12,7 +12,8 @@ state foo {
 
 final state two {
   state first {
-    delay 1s => second
+    delay 25ms => second
+    delay 200 => third
   }
 
   state second {}
