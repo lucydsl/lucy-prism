@@ -2,7 +2,7 @@
 <html lang="en">
 <title>Demo page</title>
 
-<pre class="language-lucy"><code class="language-lucy">import { thing } from './other.js'
+<pre class="language-lucy"><code class="language-lucy">use './other.js' { thing }
 
 guard stopIt = thing
 
@@ -36,6 +36,7 @@ final state two {
   const addLucy = module.exports;
   addLucy(Prism);
 
-  const el = document.querySelector('code');
-  Prism.highlightElement(el);
+  for(const el of document.querySelectorAll('code')) {
+    Prism.highlightElement(el);
+  }
 </script>
