@@ -5,6 +5,7 @@
 <pre class="language-lucy"><code class="language-lucy">use './other.js' { thing }
 
 guard stopIt = thing
+action setWilbur = assign(wilbur)
 
 state foo {
   one => two
@@ -12,15 +13,17 @@ state foo {
 
 final state two {
   state first {
-    delay 25ms => second
-    delay 200 => third
+    delay(25ms) => second
+    delay(200) => third
+    delay(lightDelay) => forth
   }
 
   state second {}
 
   machine inner {
     state another {
-      something => assign wilbur => next
+      something => assign(wilbur) => next
+      another => guard(life) => action(logStuff) => next
     }
   }
 }</code></pre>
