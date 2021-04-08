@@ -11,7 +11,15 @@ state foo {
   one => two
 }
 
-final state two {
+state another {
+  click => assign(todo, spawn(todo)) => next
+}
+
+state next {
+  save => send(parent, todoSaved) => next
+}
+
+machine two {
   state first {
     delay(25ms) => second
     delay(200) => third
