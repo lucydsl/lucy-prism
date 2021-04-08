@@ -1,6 +1,6 @@
 {
   "name": "@lucy/prism",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Prism plugin for the Lucy language",
   "main": "lib/main.js",
   "files": [
