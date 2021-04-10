@@ -12,7 +12,10 @@ state foo {
 }
 
 state another {
+  @enter => action(setWilbur)
+  @exit => action(logging)
   click => assign(todo, spawn(todo)) => next
+  on(delay) => doSomething
 }
 
 state next {
