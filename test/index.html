@@ -13,8 +13,8 @@ state foo {
 
 state another {
   @entry => action(setWilbur)
-  @exit => action(logging)
-  click => assign(todo, spawn(todo)) => next
+  @exit => :logging => => action(:logging)
+  click => assign(@todo, spawn(todo)) => next
   on(delay) => doSomething
 }
 
