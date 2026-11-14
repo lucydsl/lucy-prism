@@ -7,12 +7,20 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/smoke.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucydsl/lucy-prism.git"
   },
   "keywords": [
     "Lucy",
     "Prism"
   ],
   "author": "Matthew Phillips",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lucydsl/lucy-prism/issues"
+  },
+  "homepage": "https://github.com/lucydsl/lucy-prism#readme"
 }
