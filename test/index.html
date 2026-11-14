@@ -23,7 +23,11 @@ state next {
 }
 
 machine two {
+  event go(Thing)
+  event stop
+
   state first {
+    event => first
     delay(25ms) => second
     delay(200) => third
     delay(lightDelay) => forth
